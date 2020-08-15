@@ -1,6 +1,6 @@
 import pyttsx3
 
-tts = pyttsx3.init()
+tts = pyttsx3.init('dummy')
 voices = tts.getProperty('voices')
 # Задать голос по умолчанию
 tts.setProperty('voice', 'ru')
@@ -21,6 +21,7 @@ for voice in voices:
     if voice.name == 'Aleksandr':
         ru2 = voice.id
         tts.setProperty('voice', voice.id)
+        print(voice.id)
         tts.setProperty('rate', 500)  # Скорость в % (может быть > 100)
         tts.setProperty('volume', 0.9)  # Скорость в % (может быть > 100)
 # очередь из текста
