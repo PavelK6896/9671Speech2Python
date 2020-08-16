@@ -4,8 +4,15 @@ print(dir(pyttsx3))
 tts = pyttsx3.init()
 voices = tts.getProperty('voices')
 
-for voice in voices:
+asd = 1
+for voice in  voices:
+
+    print(' / ' , asd , ' --- ' )
+    asd = asd + 1
+
     print('Имя: %s' % voice.name)
+    print('id: %s' % voice.id)
+    print('languages: %s' % voice.languages)
 
     if voice.name == 'russian':
         en2 = voice.id
