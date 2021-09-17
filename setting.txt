@@ -9,4 +9,8 @@ pip install pywin32 pyttsx3 py-espeak-ng
 # pip install py-espeak-ng
 
 pip install googletrans
+pip install pyttsx3
 
+--exe
+pip install pyinstaller
+pyinstaller s.py
