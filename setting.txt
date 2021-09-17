@@ -14,3 +14,5 @@ pip install pyttsx3
 --exe
 pip install pyinstaller
 pyinstaller s.py
+
+pip install keyboard
